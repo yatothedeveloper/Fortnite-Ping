@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Fortnite Server.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite Server Status - Live</title>
+    
+    <link rel="icon" type="image/png" href="image.jpg">
+</head>
+<body>
+    <div class="fortnite-status" aria-label="Fortnite Server Status Online" id="component">
+    
+    <h2>Fortnite Server Status</h2>
+    
+    <p class="intro-text">
+        Check the live operational status of Fortnite’s infrastructure globally. Monitor real-time ping rates, network stability, and response latency across all major deployment zones including NA, Europe, Middle East, Asia, and Oceania to optimize your matchmaking queue.
+    </p>
+    
+    <ul class="ping-list" aria-live="polite">
+        
+        <!-- EU West (Paris) -->
+        <li class="server best-server" data-address="dynamodb.eu-west-3.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/fr.png" alt="France">
+                EU West (Paris)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 75 ms</small>
+                <small class="stability-label ping-green">Avg: 65ms · Jitter: 18ms</small>
+            </div>
+        </li>
+
+        <!-- EU Central (Frankfurt) -->
+        <li class="server" data-address="dynamodb.eu-central-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/de.png" alt="Germany">
+                EU Central (Frankfurt)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 84 ms</small>
+                <small class="stability-label ping-green">Avg: 68ms · Jitter: 8ms</small>
+            </div>
+        </li>
+
+        <!-- EU North (Stockholm) -->
+        <li class="server" data-address="dynamodb.eu-north-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/se.png" alt="Sweden">
+                EU North (Stockholm)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 102 ms</small>
+                <small class="stability-label ping-green">Avg: 92ms · Jitter: 18ms</small>
+            </div>
+        </li>
+
+        <!-- EU West (Dublin) -->
+        <li class="server" data-address="dynamodb.eu-west-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/ie.png" alt="Ireland">
+                EU West (Dublin)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 103 ms</small>
+                <small class="stability-label ping-green">Avg: 87ms · Jitter: 8ms</small>
+            </div>
+        </li>
+
+        <!-- NA East (Virginia) -->
+        <li class="server" data-address="dynamodb.us-east-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/us.png" alt="USA">
+                NA East (Virginia)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 159 ms</small>
+                <small class="stability-label ping-yellow">Avg: 143ms · Jitter: 9ms</small>
+            </div>
+        </li>
+
+        <!-- India (Mumbai) -->
+        <li class="server" data-address="dynamodb.ap-south-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/in.png" alt="India">
+                India (Mumbai)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 160 ms</small>
+                <small class="stability-label ping-yellow">Avg: 144ms · Jitter: 8ms</small>
+            </div>
+        </li>
+
+        <!-- NA Central (Ohio/Chicago) -->
+        <li class="server" data-address="dynamodb.us-east-2.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/us.png" alt="USA">
+                NA Central (Ohio/Chicago)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 166 ms</small>
+                <small class="stability-label ping-yellow">Avg: 152ms · Jitter: 9ms</small>
+            </div>
+        </li>
+
+        <!-- SEA (Singapore) -->
+        <li class="server" data-address="dynamodb.ap-southeast-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/sg.png" alt="Singapore">
+                SEA (Singapore)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 202 ms</small>
+                <small class="stability-label ping-yellow">Avg: 193ms · Jitter: 10ms</small>
+            </div>
+        </li>
+
+        <!-- NA West (California) -->
+        <li class="server" data-address="dynamodb.us-west-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/us.png" alt="USA">
+                NA West (California)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 216 ms</small>
+                <small class="stability-label ping-orange">Avg: 209ms · Jitter: 11ms</small>
+            </div>
+        </li>
+
+        <!-- Asia (Hong Kong) -->
+        <li class="server" data-address="dynamodb.ap-east-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/hk.png" alt="Hong Kong">
+                Asia (Hong Kong)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 228 ms</small>
+                <small class="stability-label ping-orange">Avg: 225ms · Jitter: 24ms</small>
+            </div>
+        </li>
+
+        <!-- NA Northwest (Oregon) -->
+        <li class="server" data-address="dynamodb.us-west-2.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/us.png" alt="USA">
+                NA Northwest (Oregon)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 228 ms</small>
+                <small class="stability-label ping-orange">Avg: 216ms · Jitter: 13ms</small>
+            </div>
+        </li>
+
+        <!-- Asia (Seoul) -->
+        <li class="server" data-address="dynamodb.ap-northeast-2.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/kr.png" alt="Korea">
+                Asia (Seoul)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 264 ms</small>
+                <small class="stability-label ping-orange">Avg: 260ms · Jitter: 12ms</small>
+            </div>
+        </li>
+
+        <!-- South America (São Paulo) -->
+        <li class="server" data-address="dynamodb.sa-east-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/br.png" alt="Brazil">
+                South America (São Paulo)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 265 ms</small>
+                <small class="stability-label ping-orange">Avg: 266ms · Jitter: 25ms</small>
+            </div>
+        </li>
+
+        <!-- Asia (Tokyo) -->
+        <li class="server" data-address="dynamodb.ap-northeast-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/jp.png" alt="Japan">
+                Asia (Tokyo)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 274 ms</small>
+                <small class="stability-label ping-orange">Avg: 270ms · Jitter: 15ms</small>
+            </div>
+        </li>
+
+        <!-- Oceania (Sydney) -->
+        <li class="server" data-address="dynamodb.ap-southeast-2.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/au.png" alt="Australia">
+                Oceania (Sydney)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-online">Online</span>
+                <small class="ping-time">Ping: 301 ms</small>
+                <small class="stability-label ping-orange">Avg: 301ms · Jitter: 16ms</small>
+            </div>
+        </li>
+
+        <!-- Middle East (Bahrain) -->
+        <li class="server" data-address="dynamodb.me-south-1.amazonaws.com">
+            <div class="name">
+                <img decoding="async" src="https://flagcdn.com/w20/bh.png" alt="Bahrain">
+                Middle East (Bahrain)
+            </div>
+            <div class="metrics">
+                <span class="server-status status-offline">Offline</span>
+                <small class="ping-time">Ping: -- ms</small>
+                <small class="stability-label"></small>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<script src="Fortnite Server.js"></script>
+    
+
+</body>
+</html>
