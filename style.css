@@ -189,7 +189,7 @@ p {
 
 .status-online { color: var(--ok); }
 .status-offline { color: var(--err); }
-.ping-time { color: #475569; font-size: 12px; }
+.ping-time { color: #ffffff; font-size: 12px; }
 .stability-label { color: #334155; margin-top: 3px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
 
 /* توهج فسفوري مميز مخصص لموقعك فقط */
