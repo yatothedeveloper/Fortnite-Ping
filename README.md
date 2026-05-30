@@ -1,6 +1,14 @@
 Fortnite-Ping Tracker
 Project Link: https://yatothedeveloper.github.io/Fortnite-Ping/
 
-"I built this project because I was tired of slow, ad-heavy websites just to check my ping while gaming. I wanted something fast, clean, and minimal.
+About This Project
+I built this project to solve a genuine problem: the lack of a fast, clean, and ad-free way to check server latency. What started as a simple idea turned into a challenging technical journey.
 
-I challenged myself to build this tool from scratch in a very short time, focusing entirely on performance and a smooth user experience. This project was a great way for me to sharpen my front-end skills and learn how to deploy a project properly from start to finish. It’s not just a tool; it’s a solution I actually use myself."
+The Challenge
+Making this "real" wasn't easy. I had to figure out how to fetch live data efficiently, handle API limitations, and ensure the UI remained responsive. Dealing with real-time ping data required a lot of trial and error to get the accuracy I wanted.
+
+Teamwork & Collaboration
+I didn't do this alone. I’m incredibly grateful to the friends and developers who helped me along the way. Their feedback on the UI and technical support during the debugging phases were crucial in turning this from a rough draft into a polished, working application.
+
+Why It Matters
+This project taught me that real-world development is more than just writing code; it’s about problem-solving, persistence, and knowing when to ask for help. It’s a tool I use daily, and I hope it serves you just as well.
