@@ -1,0 +1,237 @@
+@layer inherited {
+  #component {
+    --mow-top-0: 0.00001px;
+    color: var(--mow-bc);
+    letter-spacing: 0;
+    line-height: 1.5;
+    --bff: 'Inter', system-ui, sans-serif;
+    --hff: 'Inter', system-ui, sans-serif;
+    --mow-bc: #94a3b8;
+    --mow-hc: #ffffff;
+    --mow-bbc: #07070c;
+    font-family: var(--bff);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    
+    --err: #ff2a51;
+    --mid: #ff7f11;
+    --warn: #ffcc00;
+    --ok: #00ffaa;
+    --ring: #ff0055;
+    --brand: #9d4edd;
+    --muted: #475569;
+    --text: #f1f5f9;
+    --border: #241432;
+    --bg2: #0d0b14;
+    --bg: #040307;
+  }
+  
+  body {
+    background-color: #030206 !important; 
+    margin: 0;
+    padding: 0;
+  }
+}
+body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
+canvas{ display: block; }
+#particles-js{ position:absolute; width: 100%; height: 1300px; background-color: #14021e; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.js-count-particles{ font-size: 1.1em; }
+#stats, .count-particles{ margin-top: 5px; margin-left: 5px; }
+#stats{ border-radius: 3px 3px 0 0; overflow: hidden; }
+.count-particles{ border-radius: 0 0 3px 3px; }
+header{
+  position: relative; text-align: center; margin-top: 10px; font-size: 20px;}
+header p {color:rgb(255, 255, 255);}
+  ul {
+  box-sizing: border-box;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+div, h2, p, ul, li, span, small, body, html {
+  vertical-align: baseline;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 5px;
+}
+img {
+  vertical-align: middle;
+  height: auto;
+}
+h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+p {
+  letter-spacing: 0.3px;
+}
+ul {
+  margin: 30px;
+}
+:focus {
+  outline-style: none;
+  outline-color: #0000;
+}
+h2, #component p {
+  margin-bottom: 30px;
+}
+#component p {
+  letter-spacing: 0;
+}
+:after, :before, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-bottom: 20px;
+}
+
+/* --- إعادة بناء الهوية البصرية لعدم التقليد --- */
+
+.fortnite-status {
+  color: var(--text);
+  /* تدرج بنفسجي مظلم وناعم جداً يشبه شاشات الألعاب البريميوم */
+  background: linear-gradient(180deg, #0b0914 0%, #05040a 100%);
+  border: 1px solid var(--border);
+  border-radius: 6px; /* حواف متناسقة حادة وهجومية */
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 35px 24px;
+  box-shadow: 0 30px 55px rgba(0, 0, 0, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+/* خط نيون قرمزي في الأعلى مختلف عن باليتة الزرقاء القديمة */
+.fortnite-status::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff0055, var(--brand));
+}
+
+.fortnite-status h2 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px;
+  font-size: clamp(24px, 4vw, 32px);
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 750px;
+  color: #64748b;
+  margin: 0 auto 30px;
+  font-size: clamp(13px, 2vw, 14px);
+  line-height: 1.6;
+}
+
+.ping-list {
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.server {
+  border: 1px solid #161420;
+  background: #08070d;
+  border-radius: 4px;
+  grid-column: span 6;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+}
+
+/* تأثير بريميوم مختلف: إضاءة الحدود بالبنفسجي النيون وتغيير خفيف للون الخلفية */
+.server:hover {
+  border-color: var(--brand);
+  background: #110e1a;
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.15);
+}
+
+.name {
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #e2e8f0;
+  display: flex;
+}
+
+.name img {
+  border-radius: 2px;
+  width: 22px;
+  height: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.metrics {
+  flex-direction: column;
+  align-items: flex-end;
+  display: flex;
+}
+
+.server-status {
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.status-online { color: var(--ok); }
+.status-offline { color: var(--err); }
+.ping-time { color: #ffffff; font-size: 12px; }
+.stability-label { color: #334155; margin-top: 3px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* توهج فسفوري مميز مخصص لموقعك فقط */
+.ping-green { color: var(--ok); text-shadow: 0 0 8px rgba(0, 255, 170, 0.25); }
+.ping-yellow { color: var(--warn); text-shadow: 0 0 8px rgba(255, 204, 0, 0.2); }
+.ping-orange { color: var(--mid); text-shadow: 0 0 8px rgba(255, 127, 17, 0.2); }
+
+/* تمييز السيرفر الأفضل (الشرق الأوسط) بلون فسفوري صريح بدون تدرجات معقدة */
+.best-server {
+  border: 1px solid var(--ok) !important;
+  background: rgba(0, 255, 170, 0.02) !important;
+}
+
+@media (width<=900px) {
+  .server {
+    grid-column: span 12;
+  }
+}
+
+@media (width<=600px) {
+  .fortnite-status {
+    padding: 24px 16px;
+    margin: 14px;
+  }
+  .server {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .metrics {
+    align-items: flex-end;
+  }
+  .server-status {
+    font-size: 17px;
+  }
+}
