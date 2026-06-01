@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
         setInterval(measureAndSortPing, 1000);
     });
 window.onload = function() {
-    // 1. تهيئة Particles
     particlesJS("particles-js", {
         "particles": {
             "number": { "value": 23, "density": { "enable": true, "value_area": 800 } },
@@ -102,33 +101,22 @@ window.onload = function() {
             "shape": { "type": "circle" },
             "opacity": { "value": 1, "random": true },
             "size": { "value": 10, "random": true },
-            "line_linked": { "enable": false },
-            "move": { "enable": true, "speed": 6, "direction": "top", "out_mode": "out" }
+            "line_linked": { "enable": false }, // تم إيقاف الخطوط
+            "move": { 
+                "enable": true, 
+                "speed": 6, 
+                "direction": "top", 
+                "out_mode": "out" 
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": { "enable": false }, // إيقاف التفاعل عند المرور
+                "onclick": { "enable": false }, // إيقاف التفاعل عند الضغط
+                "resize": true
+            }
         },
         "retina_detect": true
     });
-
-    // 2. تهيئة Stats
-    const stats = new Stats();
-    stats.setMode(0);
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0px';
-    stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
-
-    // 3. تحديث الـ counter بأمان
-    const count_particles = document.querySelector('.js-count-particles');
-    
-    function update() {
-        stats.begin();
-        
-        // التحقق من وجود المكتبة قبل محاولة قراءة عدد الجزيئات
-        if (window.pJSDom && window.pJSDom[0] && window.pJSDom[0].pJS.particles.array) {
-            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        }
-        
-        stats.end();
-        requestAnimationFrame(update);
-    }
-    requestAnimationFrame(update);
 };
