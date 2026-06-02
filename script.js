@@ -1,3 +1,11 @@
+/*
+ * Project: [اكتب اسم مشروعك هنا]
+ * Author: Yahya Magdy
+ * License: CC BY-NC 4.0 (Non-Commercial Use Only)
+ * 
+ * يمنع استخدام هذا الكود لأغراض تجارية أو بيعه.
+ * كافة الحقوق محفوظة © 2026 Yahya Magdy.
+ */
 document.addEventListener("DOMContentLoaded", () => {
         const pingList = document.querySelector(".ping-list");
         
