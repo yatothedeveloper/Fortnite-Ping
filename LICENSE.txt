@@ -1,0 +1,10 @@
+Copyright (c) 2026 Yahya Magdy
+
+All rights reserved.
+
+This code is provided for educational and personal use only. 
+Unauthorized commercial use, redistribution, or sale of this 
+source code is strictly prohibited.
+
+يمنع منعاً باتاً استخدام هذا الكود لأي أغراض تجارية أو بيعه 
+لأطراف أخرى. جميع الحقوق محفوظة للمطور يحيى مجدي.
