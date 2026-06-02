@@ -6,6 +6,7 @@
  * يمنع استخدام هذا الكود لأغراض تجارية أو بيعه.
  * كافة الحقوق محفوظة © 2026 Yahya Magdy.
  */
+
 document.addEventListener("DOMContentLoaded", () => {
         const pingList = document.querySelector(".ping-list");
         
