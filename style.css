@@ -1,3 +1,15 @@
+/*
+ * Project: [اسم مشروعك]
+ * Author: Yahya Magdy
+ * License: CC BY-NC 4.0 (Non-Commercial Use Only)
+ * 
+ * يمنع استخدام هذا الكود لأغراض تجارية أو بيعه.
+ * كافة الحقوق محفوظة © 2026 Yahya Magdy.
+ */
+
+body {
+  /* كود الـ CSS الخاص بك */
+}
 @layer inherited {
   #component {
     --mow-top-0: 0.00001px;
